@@ -1,0 +1,181 @@
+/* .container{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+} */
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "imgsalon imgsalon imgsalon imgsalon"
+      "imgsalon imgsalon imgsalon imgsalon"
+      "cis avis1 avis2 cis2"
+      "imgcffeuse imgcffeuse form form"
+      "imgcffeuse imgcffeuse form form"
+      ". iframe iframe ."
+      ". iframe iframe ."; 
+  }
+  .iframe{
+ grid-area:iframe;
+ background: #B539B5;
+background: -webkit-radial-gradient(center, #B539B5, transparent,transparent);
+background: -moz-radial-gradient(center, #B539B5, transparent,transparent);
+background: radial-gradient(ellipse at center, #B539B5, transparent,transparent);
+padding-bottom: 5%;
+border-radius:10px;
+opacity: 0.8;
+}
+span{font-weight: bolder;}
+.avis1 img{
+    width: 32%;
+    border-radius: 50%;}
+.avis2 img{
+    width:35%;
+    border-radius: 50%;}
+
+    .avis1 p{
+        font-weight: 100;
+        font-style: italic;
+        font-family: 'Poppins';
+
+    }
+    .avis2 p{
+        font-weight: 100;
+        font-style: italic;
+        font-family: 'Poppins';
+    }
+  .cis{
+      grid-area: cis;
+      height:75%;
+      width: 50%;
+      background-size: 100%;
+  }
+  .cis2{
+    grid-area: cis2;
+    height:75%;
+    width: 50%;
+    background-size: 100%;
+}
+.form a{
+    color:royalblue;
+}
+
+.imgsalon{
+background:url("salon3_e6coif.jpg") no-repeat ;
+background-size: 100%;
+height: 100vh;
+width: 100%;
+grid-area: imgsalon;
+border-radius: 5px;
+border:wheat 3px;
+}
+.avis1{
+   
+    grid-area:avis1;
+    background: -webkit-radial-gradient(center, #584B7C, transparent,transparent);
+    background: -moz-radial-gradient(center, #584B7C, transparent,transparent);
+    background: radial-gradient(ellipse at center, #584B7C,  transparent,transparent);
+}
+.avis2{
+    grid-area:avis2;
+    background: -webkit-radial-gradient(center, #B539B5, transparent,transparent);
+    background: -moz-radial-gradient(center, #B539B5, transparent,transparent);
+    background: radial-gradient(ellipse at center, #B539B5,  transparent,transparent);
+}
+.logo{opacity: 5;}
+
+.imgcffeuse{
+    grid-area: imgcffeuse ;
+    background:url("salon1_e6coif.jpg") no-repeat;
+    background-size: 100%;
+    height:100%;
+    width: 100%;
+border-radius: 10px;
+opacity: 0.9;
+}
+
+input{
+    border-radius: 8px;
+}
+.form{
+    margin-left: 10%;
+grid-area: form;
+height:100%;
+width:75%;
+background: #584B7C;
+background: -webkit-radial-gradient(center, #584B7C, transparent,transparent);
+background: -moz-radial-gradient(center, #584B7C, transparent,transparent);
+background: radial-gradient(ellipse at center, #584B7C, transparent,transparent);
+border-radius:10px;
+
+font-family: 'Open Sans';
+font-weight: 800;
+font-style: italic;
+}
+input{
+    opacity: 0.56;
+}
+.adresse{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-style: italic;
+    margin-left:7%;
+}
+a{
+    padding-left: 5%;
+    
+}
+iframe{
+    padding:3%;
+    border-radius: 10px;
+}
+.descr{
+    margin-left: 15%;
+    color: #584A7C ;
+    position: relative;
+    opacity: 5;
+    top: 1vh;
+    font-size: 4vh;
+    font-style: italic;
+    text-shadow:white 0.5em 0.5em 1em, -2px 0 white, 0 2px white,
+    2px 0 white, 0 -2px white;
+    font-family: 'Poppins';
+}
+
+
+/* .arrow{
+    position: relative;
+    margin: auto;
+    top: 1em; 
+    left: 0; right: 0;
+    width: 40px;
+    height: 30px;
+    font-size: 50px;
+    line-height: 20px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+    color:#584A7C ;
+    text-shadow:white 0.5em 0.5em 1em, -2px 0 white, 0 2px white,
+    2px 0 white, 0 -2px white;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+} */
+
+
+
+
+
+
+body{
+    background:url("bg_e6coif-desktop.svg");
+    background-repeat: repeat-y;
+    background-color:white;
+}
+
+
+  
